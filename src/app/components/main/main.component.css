@@ -1,0 +1,291 @@
+/* Start Globals */
+*{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	box-sizing: border-box;
+	
+}
+body {
+	height: 2000px;
+	font-family: aerial tahoma;	
+}
+.container {
+	max-width: 1150px;
+	padding: 0;
+	display: flex;
+	align-items: center;	
+}
+/* End Globals */
+
+/* Start Section Items */
+
+.header {
+	position: relative;
+}
+.header:after {
+	content: "";
+	display: block;
+	position: absolute;
+	top: 82px;
+	left: -1px;
+	width: 47px;
+	border: 2px solid #fee802;
+
+}
+.header p {
+	margin-top: 50px;
+	margin-bottom: 15px;
+	font-size: 22px;
+	font-weight: 500;
+	color: #000
+}
+.header span {
+	text-transform: uppercase;
+}
+.lindsey {
+	margin-bottom: 10px;
+	position: relative;
+	overflow: hidden;
+	width: 65%;
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+.lindsey img {
+    height: 308px;	
+    width: 775px; 
+    cursor: pointer;	
+}
+.lindsey p, 
+.violent p {    
+	position: absolute;
+    bottom: 30px;
+    left: 30px;
+    color: #FFF;
+    font-size: 20px;
+}
+.lindsey span, 
+.violent span {
+	position: absolute;
+    bottom: 20px;
+    left: 33px;
+    color: #c9bfbf;
+    font-size: 20px;
+}
+.violent {
+    width: 33%;
+    cursor: pointer;
+}
+.violent img {
+	width: 380px;
+	height: 308px;
+    opacity: .8;	
+}
+.whistle {
+    cursor: pointer;
+}
+.whistle div img {
+	margin-right: 10px;
+	width: 380px;
+	height: 308px;
+	
+}
+.wind {
+    position: relative;
+    cursor: pointer;
+}
+.wind img {
+	width: 380px;
+	height: 308px;
+}
+.haley {
+    cursor: pointer;
+}
+.wind p,
+.whistle p,
+.haley p {   
+	position: absolute;
+    bottom: 39px;
+    left: 43px;
+    color: #FFF;
+    font-size: 21px;
+}
+.whistle img,
+.haley img,
+.champion img {
+	width: 380px;
+	height: 308px;
+}
+.wind span,
+.whistle span,
+.haley span {
+	position: absolute;
+    bottom: 28px;
+    left: 43px;
+    color: #c9bfbf;
+    font-size: 20px;
+}
+.champion {
+	margin-top: 10px;
+    position: relative;
+	margin-bottom: 10px;
+    cursor: pointer;
+}
+.champion p {
+	position: absolute;
+	bottom: 10px;
+	left: 42px;
+	font-size: 21px;
+	color: #FFF;
+	
+}
+.champion span {
+	position: absolute;
+	bottom: 5px;
+	left: 42px;
+	font-size: 21px;
+    color: #c9bfbf;
+}
+.highlights {
+	margin-top: 10px;
+	margin-bottom: 10px;
+    position: relative;
+    cursor: pointer;
+}
+.highlights p {
+	position: absolute;
+	bottom: 10px;
+	left: 42px;
+	color: #FFF;
+	font-size: 21px;
+}
+.highlights img {
+    height: 308px;	
+    width: 775px; 
+}
+.highlights span{
+	position: absolute;
+	bottom: 5px;
+	left: 42px;
+	font-size: 21px;
+    color: #c9bfbf;
+}
+
+
+.btn {
+	padding: 10px;
+	border: 2px solid #000;
+	position: absolute;  
+    right: 44%;
+    margin-top: 50px;
+    font-size: 25px;
+    margin-bottom: 25px;
+	text-transform: uppercase;
+	cursor: pointer;
+}
+.btn:hover {
+    background-color: #f7600e;
+    border: 1px solid #f7600e;
+    color: #FFF;
+}
+/* End Section Items */
+
+.box-items .item img {
+	width: 380px;
+	height: 380px;
+}
+.box-items .item {
+	margin-bottom: 10px;
+	
+	/* visibility: hidden */
+}
+.display {
+	display: none;
+}
+.box-items .item p {
+	margin-top: -88px;
+	margin-left: 13px;
+	color: #FFF;
+	font-size: 21px;
+	margin-bottom: 0;
+}
+.box-items .item span {
+	margin-top: -5px;
+	margin-left: 13px;
+    color: #c9bfbf;
+    font-size: 20px;
+}
+
+
+/* Start Section Groups */
+
+.lindsey:hover p,
+.violent:hover p,  
+.whistle:hover p,
+.wind:hover p,
+.haley:hover p,
+.champion:hover p,
+.highlights:hover p,
+.item:hover p {
+	font-weight: bold
+}
+.lindsey,
+.violent,  
+.whistle,
+.wind,
+.haley,
+.champion,
+.highlights,
+.item,
+.btn {
+	-webkit-transition: all 1s ease-in-out;
+	-moz-transition: all 1s ease-in-out;
+	transition: all 1s ease-in-out;
+}
+/* End Section Groups */
+
+/* Start Section Media */
+
+@media (min-width: 767px) and (max-width: 970px) {
+   
+	.whistle img,
+	.whistle p,
+	.whistle span {
+		margin-top: 12px;
+	}
+	.haley img,
+	.haley p,
+	.haley span {
+		margin-top: 12px;
+	}
+	.box-items .item {
+		margin-bottom: 10px;
+	}
+}
+
+@media (max-width: 767px) {
+	.violent,
+	.wind,
+	.whistle,
+	.lindsey {
+		margin-bottom: 10px;
+	}
+	.violent {
+		margin-top: 0;
+	}
+	.highlights {
+		margin-bottom: 10px;
+	}
+	.item {
+      margin-top: 33px;
+	}
+	.item:first-of-type {
+		margin-top: 10px;
+	}
+	
+} 
+
+/* End Section Media */
+
+
